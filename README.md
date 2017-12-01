@@ -1,5 +1,5 @@
 # go-env-config
-This library is a shim to allow configuration from environment variables to satisfy the interfaces for config using [go-consul-client][http://www.github.com/divideandconquer/go-consul-client].  The constructs are specifically tailored to allow minimal changes to services already using go-consul-client, but allow us to run on Heroku-like platforms, as well as keeping it easy to migrate back to an environment using Consul.
+This library is a shim to allow configuration from environment variables to satisfy the interfaces for config using [go-consul-client](http://www.github.com/divideandconquer/go-consul-client).  The constructs are specifically tailored to allow minimal changes to services already using go-consul-client, but allow us to run on Heroku-like platforms, as well as keeping it easy to migrate back to an environment using Consul.
 
 It is expected that something external to the services is managing the available environment variables, and the apps are just consumers.
 
