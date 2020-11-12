@@ -29,6 +29,11 @@ func (e envLoader) Initialize() error {
 	return nil
 }
 
+// Put does nothing for the env loader
+func (e envLoader) Put(key string, value []byte) error {
+	return nil
+}
+
 // Get fetches the raw config from the environment
 func (e envLoader) Get(key string) ([]byte, error) {
 	val := os.Getenv(key)
